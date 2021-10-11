@@ -62,7 +62,7 @@ body {
   color: #000000;
 }
 
-.brand-span {
+.brand-span-web {
   color: var(--brand-color);
 }
 
@@ -206,4 +206,8 @@ body {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+
+.brand-span-studio {
+  color: #ffffff;
 }
