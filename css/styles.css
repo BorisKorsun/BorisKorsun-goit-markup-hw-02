@@ -1,5 +1,15 @@
 /* ---------------service--------------- */
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "roboto", sans-serif;
 }
@@ -22,6 +32,12 @@ body {
 
 .list {
   list-style: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hero-title {
@@ -52,7 +68,39 @@ body {
 
 /* ---------------header--------------- */
 
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.nav-list > .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.connection {
+  display: flex;
+  padding-left: 0;
+  margin-left: auto;
+}
+
+.connection .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .brand-link {
+  margin-right: 93px;
+
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
