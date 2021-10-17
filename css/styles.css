@@ -40,15 +40,6 @@ body {
   padding-right: 15px;
 }
 
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
 .btn {
   cursor: pointer;
   font-weight: bold;
@@ -76,6 +67,8 @@ body {
 .nav-list {
   display: flex;
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .nav-list > .item:not(:last-child) {
@@ -86,6 +79,8 @@ body {
   display: flex;
   padding-left: 0;
   margin-left: auto;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .connection .item:not(:last-child) {
@@ -154,11 +149,35 @@ body {
 
 /* ---------------hero--------------- */
 
+.hero {
+  text-align: center;
+}
+
+.hero > * {
+  text-align: inherit;
+}
+
+.hero-title {
+  padding-top: 200px;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .hero-btn {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-radius: 4px;
+
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
